@@ -3,10 +3,10 @@
         <div class="row">
             <div class="col-12">
                 <div class="footer-py-60 footer-border">
-                    <div class="row">
+                    <div class="row gy-4">
                         <!-- LOGO Y ESLOGAN -->
-                        <div class="col-lg-3 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
-                            <a href="{{ route('home') }}" class="logo-footer">
+                        <div class="col-lg-3 col-md-6 col-12 mb-0 mb-md-4 pb-0 pb-md-2 col-12 text-center text-lg-start">
+                            <a href="{{ route('home') }}" class="logo-footer d-inline-block">
                                 <img src="{{ asset('images/logo-light.png') }}" width="125" height="125" alt="Logo">
                             </a>
                             <p class="para-desc mb-0 mt-4 fst-italic">Una obra, mil formas de sentirla</p>
@@ -42,10 +42,10 @@
                         <!-- COLABORACIONES CON INSTITUCIONES -->
                         <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
                             <h5 class="footer-head">Con el apoyo de:</h5>
-                            <ul class="list-unstyled footer-list mt-4 d-flex flex-column gap-3">
+                            <ul class="list-unstyled footer-list mt-4 d-flex flex-column gap-3 align-items-center align-items-md-start">
                                 <!-- AQUÍ SE PONEN LOS LOGOS DE LOS COLABORADORES -->
-                                <img src="{{ asset('images/andalucia-emprende-cadiz.jpg') }}" alt="colaborador1" width="80" height="80">
-                                <img src="{{ asset('images/open-future-andalucia.png') }}" alt="colaborador2" width="170" height="80">
+                                <img src="{{ asset('images/andalucia-emprende-cadiz.jpg') }}" class="img-fluid" alt="colaborador1" width="80" height="80">
+                                <img src="{{ asset('images/open-future-andalucia.png') }}" class="img-fluid" alt="colaborador2" width="170" height="80">
                             </ul>
                         </div>
                         
@@ -53,7 +53,7 @@
                         <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
                             <div class="footer-head">
                                 <h5 class="text-light fw-normal title-dark">Redes Sociales</h5>
-                                <ul class="list-unstyled social-icon foot-social-icon d-flex gap-3 mt-4">
+                                <ul class="list-unstyled social-icon foot-social-icon d-flex justify-content-center justify-content-md-start gap-3 mt-4">
                                     <!-- AQUÍ SE PONEN LOS ENLACES DE LAS REDES SOCIALES -->
                                     <li>
                                         <a href="#" class="rounded text-light fs-5">
@@ -83,8 +83,8 @@
                                     <div class="col-lg-8">
                                         <div class="foot-subscribe mb-3">
                                             <label class="form-label">Escribe tu email<span class="text-danger">*</span></label>
-                                            <div class="d-flex align-items-center gap-2">
-                                                <div class="form-icon position-relative email-input-wrapper w-50">
+                                            <div class="d-flex flex-column flex-md-row align-items-center gap-2">
+                                                <div class="form-icon position-relative email-input-wrapper w-100 w-lg-50">
                                                     <i class="bi bi-envelope icons" style="top: 12px; left: 15px; position: absolute;"></i>
                                                     <input type="email" name="email" id="emailsubscribe"
                                                         class="form-control ps-5 rounded"
@@ -113,15 +113,13 @@
         </div>
     </div>
 </footer>
-
-<!--
- Botón Volver Arriba
+<!-- Botón Volver Arriba -->
 <a href="#" id="back-to-top" class="back-to-top rounded-pill" style="display: none;">
     <i class="bi bi-arrow-up"></i>
 </a>
 
 
-Script para el botón Volver Arriba
+<!-- Script para el botón Volver Arriba -->
 <script>
     // Mostrar/ocultar el botón "Volver arriba" según el scroll
     document.addEventListener('DOMContentLoaded', function() {
@@ -145,4 +143,3 @@ Script para el botón Volver Arriba
         });
     });
 </script>
--->

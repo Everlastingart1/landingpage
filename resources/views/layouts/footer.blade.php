@@ -5,7 +5,7 @@
                 <div class="footer-py-60 footer-border">
                     <div class="row gy-4">
                         <!-- LOGO Y ESLOGAN -->
-                        <div class="col-lg-3 col-md-6 col-12 mb-0 mb-md-4 pb-0 pb-md-2 col-12 text-center text-lg-start">
+                        <div class="col-lg-3 col-md-6 col-12 mb-0 mb-md-4 pb-0 pb-md-2 text-center text-lg-start">
                             <a href="{{ route('home') }}" class="logo-footer d-inline-block">
                                 <img src="{{ asset('images/logo-light.png') }}" width="125" height="125" alt="Logo">
                             </a>

@@ -127,6 +127,10 @@
             display: block;
         }
 
+        .social-url-input input {
+            width: 100%;
+        }
+
         /* Estilos para campo opcional */
         .optional-field {
             position: relative;
@@ -191,7 +195,7 @@
                                             Registrarme como Usuario
                                         </button>
                                         <button type="button"
-                                            class="btn btn-lg {{ old('role', 'user') === 'artist' ? 'btn-primary' : 'btn-outline-primary' }}"
+                                            class="btn btn-lg w-100 {{ old('role', 'user') === 'artist' ? 'btn-primary' : 'btn-outline-primary' }}"
                                             id="roleArtistBtn" onclick="selectRole('artist')">
                                             Registrarme como Artista
                                         </button>
